@@ -1,0 +1,11 @@
+body {
+  height: 20000px;
+}
+
+.texto {
+  display: none;
+}
+
+.texto.mostrar {
+  display: block;
+}

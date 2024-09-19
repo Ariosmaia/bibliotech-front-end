@@ -1,0 +1,86 @@
+/* Estilo global */
+body {
+  background-color: #ecf0f1;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilo do cabeçalho */
+h1 {
+  color: #2c3e50;
+  font-size: 3em;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: #2980b9;
+}
+
+/* Estilo do parágrafo de perfil */
+.profile p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  margin: 20px 0;
+}
+
+/* Estilo da seção de hobbies */
+.hobbies h2 {
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hobbies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hobbies ul li {
+  color: #16a085;
+  font-size: 1.2em;
+  margin: 10px 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do rodapé */
+footer {
+  margin-top: 20px;
+}
+
+footer a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+/* Efeito de hover */
+h1:hover,
+li:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease;
+}

@@ -1,0 +1,313 @@
+:root {
+  --white: #fff;
+
+  --gray-100: #e1e1e6;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-500: #7c7c8a;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+
+  --green-300: #00b37e;
+  --green-500: #00875f;
+  --green-700: #015f43;
+
+  --red-300: #f75a68;
+  --red-500: #ab222e;
+  --red-700: #7a1921;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--green-500);
+}
+
+body {
+  background: var(--gray-800);
+  color: var(--gray-100);
+  -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+#menu {
+  width: 250px;
+  // width: 60px;
+  height: 100vh;
+  background-color: var(--gray-600);
+  overflow-x: hidden;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#menu .menu-button {
+  cursor: pointer;
+  padding: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
+  background-color: transparent;
+  color: var(--gray-100);
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+#icon-menu,
+#icon-close {
+  font-size: 1.375rem !important;
+  height: 22px;
+  width: 22px;
+}
+
+#menu .menu-button #icon-menu {
+  display: none;
+  // display: block;
+}
+
+#menu .menu-button #icon-close {
+  display: block;
+  // display: none;
+}
+
+#menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#menu a span {
+  display: block;
+  // display: none;
+}
+
+#menu a:hover {
+  background-color: var(--gray-700);
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul.submenu {
+  display: block;
+  // display: none;
+  background-color: var(--gray-700);
+  padding-left: 20px;
+}
+
+#menu a.active + ul.submenu,
+#menu ul.submenu:hover {
+  display: none;
+  // display: block;
+}
+
+#menu ul.submenu a {
+  padding: 8px 15px;
+  font-size: 1rem;
+  color: var(--gray-300);
+}
+
+#menu ul.submenu a:hover {
+  background-color: var(--gray-600);
+}
+
+header,
+main {
+  flex: 1;
+  transition: margin-left 0.5s;
+  margin-left: 250px;
+  // margin-left: 60px;
+}
+
+header {
+  background: var(--green-700);
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding-left: 20px;
+}
+
+header h1 {
+  color: var(--gray-100);
+  font-size: 2rem;
+  letter-spacing: 0.125px;
+}
+
+main {
+  padding: 20px;
+  height: calc(
+    100vh - 60px
+  ); /* Ajusta a altura do main para ocupar o espaço restante */
+  overflow: hidden; /* Impede a rolagem do main */
+}
+
+.content {
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: baseline;
+  gap: 14px;
+}
+
+form label {
+  font-size: 1.125rem;
+  color: var(--gray-100);
+  font-weight: 500;
+}
+
+form input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--gray-400);
+  border-radius: 4px;
+  background-color: var(--gray-800);
+  color: var(--gray-100);
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: var(--green-500);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form .search-button {
+  background-color: var(--gray-400);
+}
+
+form button:hover {
+  background-color: var(--green-700);
+}
+
+form .search-button:hover {
+  background-color: var(--gray-500);
+}
+
+.table-container {
+  margin: auto;
+  border-radius: 4px;
+  background-color: var(--gray-800);
+  overflow: auto; /* Permite a rolagem apenas dentro do contêiner da tabela */
+  max-height: calc(100vh - 310px); /* Usa toda a altura disponível no main */
+}
+
+.table-container::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem vertical */
+  height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Estilo do trilho da barra de rolagem */
+.table-container::-webkit-scrollbar-track {
+  background: var(--gray-700); /* Cor de fundo do trilho */
+  border-radius: 10px; /* Arredondamento dos cantos */
+}
+
+/* Estilo do polegar da barra de rolagem */
+.table-container::-webkit-scrollbar-thumb {
+  background-color: var(--gray-500); /* Cor do polegar */
+  border-radius: 10px; /* Arredondamento dos cantos */
+  border: 3px solid var(--gray-700); /* Espaço entre o polegar e o trilho */
+}
+
+/* Estilo do polegar ao passar o mouse */
+.table-container::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gray-400); /* Cor do polegar ao passar o mouse */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+}
+
+thead tr th {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--gray-900);
+  color: white;
+  font-weight: 500;
+}
+
+tr:nth-child(even) {
+  background-color: var(--gray-700);
+}
+
+tr:hover {
+  background-color: var(--gray-600);
+}
+
+.table-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.edit-button,
+.delete-button {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  padding: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--gray-400);
+  color: var(--gray-300);
+}
+
+.delete-button {
+  background-color: var(--red-500);
+}
+
+.table-register {
+  padding: 40px 0;
+}
