@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-Este repositório contém o material e os projetos abordados nas aulas de **Frontend e Angular**, que são oferecidas **gratuitamente** todas as **quintas-feiras às 20h**.
+Este repositório contém o material e os projetos abordados nas aulas de **Frontend e Angular**, que são oferecidas **gratuitamente** todas as **quartas-feiras às 20h**.
 
 As aulas cobrem desde o básico de **HTML**, **CSS** e **JavaScript**, até o desenvolvimento com **Angular**. Ao final do curso, construiremos um projeto prático utilizando todas as tecnologias aprendidas.
 
