@@ -28,13 +28,13 @@
     </header>
 
     <nav id="menu">
-      <button class="menu-button">
+      <button class="menu-button" onclick="toggleMenu()">
         <i id="icon-menu" class="material-symbols-sharp"> menu</i>
         <i id="icon-close" class="material-symbols-sharp"> close</i>
       </button>
 
-      <a class="menu-item" href="#"
-        ><i id="icon-menu" class="material-symbols-sharp"> local_library</i>
+      <a class="menu-item" href="#" onclick="toggleSubmenu('submenu1')">
+        <i id="icon-menu" class="material-symbols-sharp"> local_library</i>
         <span>Cadastros</span></a
       >
       <ul id="submenu1" class="submenu">
@@ -43,16 +43,16 @@
         <li><a href="#">Livros</a></li>
       </ul>
 
-      <a class="menu-item" href="#"
-        ><i id="icon-menu" class="material-symbols-sharp"> description</i>
+      <a class="menu-item" href="#" onclick="toggleSubmenu('submenu2')">
+        <i id="icon-menu" class="material-symbols-sharp"> description</i>
         <span>Relatórios</span></a
       >
       <ul id="submenu2" class="submenu">
         <li><a href="#">Livros</a></li>
       </ul>
 
-      <a class="menu-item" href="#"
-        ><i id="icon-menu" class="material-symbols-sharp"> settings</i>
+      <a class="menu-item" href="#" onclick="toggleSubmenu('submenu3')">
+        <i id="icon-menu" class="material-symbols-sharp"> settings</i>
         <span>Parâmetro</span></a
       >
       <ul id="submenu3" class="submenu">
@@ -84,279 +84,14 @@
                 <th>Ação</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td>Nome do autor</td>
-                <td class="table-actions">
-                  <button class="edit-button">
-                    <i class="material-symbols-sharp"> edit</i>
-                  </button>
-                  <button class="delete-button">
-                    <i class="material-symbols-sharp"> delete</i>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
+            <tbody class="table-body"></tbody>
           </table>
         </div>
 
         <p class="table-register">Exibindo 10 de 10 registros</p>
       </div>
     </main>
+
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
